@@ -20,7 +20,7 @@ steps:
 # Copy build output (usually jar/war files)
 - task: CopyFiles@2
   inputs:
-    contents: '**/target/**/*.jar'
+    contents: '/home/vsts/work/1/s/target/helloworld.war'
     targetFolder: '$(Build.ArtifactStagingDirectory)'
 
 # Publish artifact
